@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fa;
+  padding: 20px;
+}
+
+.app {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #e1e4e8;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-top: 6px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e4e4e4;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.controls button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+}
+
+.controls button:hover {
+  background: #0052a3;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}

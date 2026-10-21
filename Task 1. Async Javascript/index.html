@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Runtime and Async HW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>JS Runtime & Async Tasks</h1>
+
+    <!-- 3 Tasks -->
+    <div class="task-list">
+      <div class="card">
+        <h3>Load Users</h3>
+        <p>Status: <span id="status-users">Idle</span></p>
+        <p>Execution Count: <span id="count-users">0</span></p>
+        <p>Loading Time: <span id="time-users">-</span></p>
+        <button onclick="runTask(taskUsers, 'users')">Run</button>
+        <button onclick="resetTask(taskUsers, 'users')">Reset</button>
+      </div>
+
+      <div class="card">
+        <h3>Load Posts</h3>
+        <p>Status: <span id="status-posts">Idle</span></p>
+        <p>Execution Count: <span id="count-posts">0</span></p>
+        <p>Loading Time: <span id="time-posts">-</span></p>
+        <button onclick="runTask(taskPosts, 'posts')">Run</button>
+        <button onclick="resetTask(taskPosts, 'posts')">Reset</button>
+      </div>
+
+      <div class="card">
+        <h3>Load Comments</h3>
+        <p>Status: <span id="status-comments">Idle</span></p>
+        <p>Execution Count: <span id="count-comments">0</span></p>
+        <p>Loading Time: <span id="time-comments">-</span></p>
+        <button onclick="runTask(taskComments, 'comments')">Run</button>
+        <button onclick="resetTask(taskComments, 'comments')">Reset</button>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="controls">
+      <button onclick="runAllTasks()">Run All Tasks (Concurrent)</button>
+      <button onclick="runSequential()">Run Sequential</button>
+      <button onclick="runEventLoopDemo()">Run Event Loop Demo</button>
+    </div>
+
+    <div id="outputMessage" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
